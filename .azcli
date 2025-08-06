@@ -1,5 +1,0 @@
-# criado antes de gerar o terraform
-
-az storage account create --name tfstatestorage001234 --resource-group tfstate-rg --location eastus  --sku Standard_LRS
-
-az storage container create --name tfstate --account-name tfstatestorage001234
