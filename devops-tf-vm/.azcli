@@ -1,0 +1,15 @@
+
+
+5️⃣ Configure Azure DevOps Secrets
+Go to Project Settings > Pipelines > Library or use variable groups to set:
+
+ARM_CLIENT_ID
+ARM_CLIENT_SECRET
+ARM_SUBSCRIPTION_ID
+ARM_TENANT_ID
+
+These are values from a Service Principal with Contributor access.
+
+
+
+az ad sp create-for-rbac --role="Contributor" --scopes="/subscriptions/<your-subscription-id>"
